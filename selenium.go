@@ -3,9 +3,9 @@ package selenium
 import (
 	"time"
 
-	"github.com/tebeka/selenium/chrome"
-	"github.com/tebeka/selenium/firefox"
-	"github.com/tebeka/selenium/log"
+	"github.com/dsmontoya/selenium/chrome"
+	"github.com/dsmontoya/selenium/firefox"
+	"github.com/dsmontoya/selenium/log"
 )
 
 // TODO(minusnine): make an enum type called FindMethod.
@@ -152,6 +152,8 @@ type Proxy struct {
 	HTTPPort  int `json:"httpProxyPort,omitempty"`
 	SSLPort   int `json:"sslProxyPort,omitempty"`
 	SocksPort int `json:"socksProxyPort,omitempty"`
+
+	SocksVersion int `json:"socksVersion,omitempty"`
 }
 
 // ProxyType is an enumeration of the types of proxies available.
